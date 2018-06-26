@@ -23,6 +23,7 @@ RUN npm install -g \
         less@1.3
 
 RUN pip install --upgrade pip
+RUN pip install cabot-alert-rocketchat
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
